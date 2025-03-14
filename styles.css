@@ -1,0 +1,215 @@
+﻿ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+header .logo {
+    font-size: 24px;
+}
+/* Logo Styles */
+header .logo img {
+    height: 50px; /* 调整这个值以适应您的设计需求 */
+    width: auto; /* 保持图片的宽高比 */
+}
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.news-list .column {
+    float: left;
+    width: 50%;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#about-section img {
+    max-width: 100%;
+    height: auto;
+}
+/* About Section Styles */
+#about-section {
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-image{
+	padding:20px;
+	}
+.about-image img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+	 
+}
+
+.about-description {
+    max-width: 45%;
+    text-align: left;
+}
+
+.about-description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Product Styles */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product {
+    text-align: center;
+    margin: 10px;
+    width: 18%;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.product a:hover {
+    color: #007BFF;
+}
+
+/* Company Information Styles */
+#company-info {
+    padding: 20px;
+    text-align: center;
+}
+
+#company-info h1 {
+    margin-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.company-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.company-description {
+    max-width: 45%;
+    text-align: left;
+}
+
+.company-description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Company Information Styles */
+
+
+/* Footer Styles */
+footer {
+    text-align: center; /* 使文本居中 */
+    padding: 10px 0; /* 增加一些内边距以提供空间 */
+    background-color: #f8f9fa; /* 可选：根据需要添加背景颜色 */
+    position: relative; /* 确保页脚相对于其正常位置定位 */
+    bottom: 0; /* 将页脚固定在底部（如果希望页脚始终在页面底部显示） */
+    width: 100%; /* 确保页脚宽度占满整个屏幕宽度 */
+}
+
+footer p {
+    margin: 0; /* 移除默认的p标签外边距，避免额外的空间影响布局 */
+}
+
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+
+.breadcrumb a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* News Detail Styles */
+#news-detail {
+    padding: 20px;
+}
+
+#news-detail h1 {
+    margin-bottom: 10px;
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.news-content {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image, .about-description {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
